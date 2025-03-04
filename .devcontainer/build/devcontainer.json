@@ -1,0 +1,24 @@
+{
+    "name": "pico-build",
+    "build": {
+        "dockerfile": "../pico-build/Dockerfile",
+        "context": "../pico-build"
+    },
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root",
+
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": [
+            "ms-azuretools.vscode-docker",
+            "ms-vscode.cpptools-extension-pack",
+            "twxs.cmake",
+            "ms-vscode.cmake-tools",
+            "mhutchie.git-graph" 
+            ]
+        }
+    }
+    
+}

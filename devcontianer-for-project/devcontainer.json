@@ -1,9 +1,6 @@
 {
     "name": "pico-build",
-    "build": {
-        "dockerfile": "../pico-build/Dockerfile",
-        "context": "../pico-build"
-    },
+    "image": "pico-build:latest",
     "workspaceFolder": "/workspace",
     "remoteUser": "root",
     "containerEnv": {

@@ -9,6 +9,10 @@
     "containerEnv": {
         "PICO_SDK_PATH": "/root/pico/pico-sdk"
     },
+    "runArgs": [
+        "--name",
+        "pico-build"
+    ],
 
     "customizations": {
         // Configure properties specific to VS Code.

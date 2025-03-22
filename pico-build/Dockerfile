@@ -30,5 +30,5 @@ WORKDIR /root/pico/picotool
 RUN mkdir -p /etc/udev/rules.d
 RUN cp udev/99-picotool.rules /etc/udev/rules.d/
 
-WORKDIR /workspaces
+WORKDIR /root/pico/
 RUN cp /root/pico/pico-sdk/external/pico_sdk_import.cmake .

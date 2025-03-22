@@ -1,4 +1,7 @@
 FROM ubuntu:latest
+LABEL org.opencontainers.image.source https://github.com/sdwhsrw/pico-docker
+LABEL org.opencontainers.image.maintainer="Ruowen Sun <sdwhsrw@gmail.com>"
+LABEL org.opencontainers.image.license="MIT"
 
 RUN apt update && apt upgrade -y
 RUN apt install -y \

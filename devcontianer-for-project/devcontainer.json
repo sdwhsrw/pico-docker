@@ -1,6 +1,6 @@
 {
     "name": "pico-build",
-    "image": "pico-build:latest",
+    "image": "ghcr.io/sdwhsrw/pico-docker-arm64:latest",
     "workspaceFolder": "/workspace",
     "remoteUser": "root",
     "containerEnv": {

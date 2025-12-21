@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-LABEL org.opencontainers.image.source https://github.com/sdwhsrw/pico-docker
+LABEL org.opencontainers.image.source=https://github.com/sdwhsrw/pico-docker
 LABEL org.opencontainers.image.maintainer="Ruowen Sun <sdwhsrw@gmail.com>"
 LABEL org.opencontainers.image.license="MIT"
 
@@ -31,7 +31,7 @@ RUN cd picotool && \
     make install
 WORKDIR /root/pico/picotool
 RUN mkdir -p /etc/udev/rules.d
-RUN cp udev/99-picotool.rules /etc/udev/rules.d/
+RUN cp udev/*-picotool.rules /etc/udev/rules.d/
 
 WORKDIR /root/pico/
 RUN cp /root/pico/pico-sdk/external/pico_sdk_import.cmake .

@@ -11,5 +11,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login -u sdwhsrw -p ${{ secrets.PKG_TOKEN }} ghcr.io
-          docker build . --tag ghcr.io/sdwhsrw/pico-docker-arm64:latest
+          docker build -f ./pico-build/Dockerfile . --tag ghcr.io/sdwhsrw/pico-docker-arm64:latest
           docker push ghcr.io/sdwhsrw/pico-docker-arm64:latest

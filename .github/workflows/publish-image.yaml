@@ -33,7 +33,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.PKG_TOKEN }}
       
       - name: Docker metadata (tags/labels)
         id: meta

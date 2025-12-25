@@ -1,15 +1,15 @@
 {
     "name": "pico-dev",
     "image": "ghcr.io/sdwhsrw/pico-docker-arm64:latest",
-    "workspaceFolder": "/workspace",
+    // "workspaceFolder": "/workspace",
     "remoteUser": "root",
     "containerEnv": {
         "PICO_SDK_PATH": "/root/pico/pico-sdk"
     },
-    "runArgs": [
-        "--name",
-        "pico-build" // with a fix docker container name
-    ],
+    // "runArgs": [
+    //     "--name",
+    //     "pico-dev" // with a fix docker container name
+    // ],
     "customizations": {
         // Configure properties specific to VS Code.
         "vscode": {

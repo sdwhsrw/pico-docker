@@ -1,18 +1,13 @@
 {
     "name": "pico-build",
     "build": {
-        "dockerfile": "../pico-build/Dockerfile",
-        "context": "../pico-build"
+        "dockerfile": "../../docker/Dockerfile",
+        "context": "../.."
     },
-    "workspaceFolder": "/workspace",
     "remoteUser": "root",
     "containerEnv": {
         "PICO_SDK_PATH": "/root/pico/pico-sdk"
     },
-    "runArgs": [
-        "--name",
-        "pico-build"
-    ],
 
     "customizations": {
         // Configure properties specific to VS Code.

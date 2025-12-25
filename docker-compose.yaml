@@ -1,8 +1,0 @@
-services:
-  pico-build:
-    build:
-      context: ./pico-build
-      dockerfile: Dockerfile
-    container_name: pico-build
-    stdin_open: true
-    tty: true

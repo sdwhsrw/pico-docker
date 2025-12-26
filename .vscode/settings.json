@@ -1,0 +1,6 @@
+{
+    "clangd.arguments": [
+        // this for find assert.h
+        "--query-driver=/usr/bin/arm-none-eabi-*"
+    ]
+}

@@ -15,13 +15,16 @@ RUN apt install -y \
 RUN apt install -y \
     pkg-config \
     libusb-1.0-0-dev
+RUN apt install -y clangd
 
+# add pico sdk
 WORKDIR /root/pico
 RUN git clone https://github.com/raspberrypi/pico-sdk.git
 RUN cd pico-sdk && \
     git submodule update --init --recursive
 ENV PICO_SDK_PATH="/root/pico/pico-sdk"
 
+# add pico-tool
 WORKDIR /root/pico
 RUN git clone https://github.com/raspberrypi/picotool.git
 RUN cd picotool && \

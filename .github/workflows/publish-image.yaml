@@ -13,7 +13,7 @@ permissions:
 #! ENVIROMENT VARIABLE .. FOR WHAT?
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/pico-docker
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build_and_publish:
